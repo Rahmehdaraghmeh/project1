@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    src: url( ../Metropolis-MediumItalic.otf);
+    font-family: metropolis;
+}
+body{
+    font-family:metropolis; 
+   
+}
+.container{
+    width: 85%;
+    margin: auto;
+}
+.row{
+    display: flex;
+  
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+.top{
+    width: 100%;
+    background-color: #0061f2;
+    height: 60px;
+}
+nav{
+padding: 27px 0;
+width: 100%;
+position: sticky;
+top:0; 
+z-index: 9999;
+}
+nav .logo{
+ 
+    width: 20%;
+    text-transform: uppercase;
+}
+.small{
+    text-transform: lowercase;
+}
+nav .logo a{
+    font-size: 18px;
+    font-weight: 700;
+}
+ul{
+    list-style: none;
+}
+nav .list_item{
+    width: 60%;
+  
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+
+}
+nav .list_item .item{
+    margin-right: 23px;
+}
+nav .list_item a{
+text-transform:capitalize ;
+font-size: 15px ;
+color: #0000008C;
+font-weight: 500;
+}
+nav .list_item a i{
+    margin-left: 6px;
+    font-size: 12px;
+    transition: 2s;
+}
+nav .list_item .item:hover i{
+    transform: translateX(-5px);
+}
+nav .list_item .item{
+    position: relative;
+}
+nav .list_item .dropdown{
+    position: absolute;
+   background-color: white;
+    width: 7px;
+    padding: 6px;
+    top: 60px;
+    opacity: 0;
+    transition: 0.5s;
+    box-shadow: -10px 0 3px  #e8e2e2
+}
+nav .list_item .item:hover .dropdown{
+opacity: 1;
+top: 30px;
+} 
+.btn{
+padding: 10px 17px;
+background-color: #0061f2;
+color: white;
+border-radius: 6px;
+text-transform: capitalize;
+letter-spacing: 1.2px;
+border:  1px solid  #0061f2;
+transition: .5px;
+ cursor: pointer;
+}
+.btn:hover{
+    background-color: #0052ce;
+    border-color:#0052ce ;
+}
+header .content h1{
+    font-size: 32px ;
+    margin-bottom: 30px ;
+    
+}
+header .content p{
+    width: 80%;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+header .content input:nth-child(1){
+    width: 55%;
+    background-color:#eef2f8 ;
+    border-color: #eef2f8;
+    padding: 10px;
+    border:1px solid #c5ccd6;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+header .content input{
+    margin-bottom:20px;
+}
+
+header .content{
+    width: 60%;
+    animation: rahma 1s;
+}
+
+header .img-header{
+width: 40%;
+}
+@keyframes rahma{
+0%{
+    transform: translateX(-100%);
+}
+100%
+{
+    transform: translateX(0%);
+}
+}
+.feature{
+    background-color: #f2f6fc;
+    padding: 156px 0 62px;
+    position: relative;
+}
+.feature:before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    top :0px;
+    border-bottom-left-radius: 35%;
+    border-bottom-right-radius: 35%;
+    background-color:white;
+}
+
+.feature .box{
+    text-align: center;
+    width: 30%;
+
+}
+.feature .icon{
+background:linear-gradient(135deg,#0061f2,rgba(105,0,99,.8));
+height: 80px;
+width: 80px;
+ border-radius: 50%;
+margin: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+ font-size: 27px;
+}
+.feature .box h3{
+    font-size: 20px;
+    font-weight: 600;
+  margin: 13px 0;
+ color: #363d47;
+}
+.feature .box p{
+    color: #69707a;
+    font-size: medium;
+}
+main .feature .row{
+    align-items: flex-start;
+}
+footer{
+    background-color: #0061f2;
+    color: #ffffff99;
+}
+footer{
+
+ background-color: #363d47;
+    padding: 156px 0 62px;
+    position: relative;
+}
+footer:before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    top :0px;
+    border-bottom-left-radius: 35%;
+    border-bottom-right-radius: 35%;
+    background-color:#f2f6fc;
+}
+footer .footer_first .row{
+    align-items: flex-start;
+}
+footer .footer_first .item-footer p{
+    margin: 10px 0;
+}
+footer .footer_first .item-footer h3{
+    margin-bottom:20px ;
+}
+footer .footer_first .item-footer ul li{
+margin-bottom: 10px  ;
+}
+footer .footer_first .item-footer ul li a{
+    
+   color: #ffffff99;
+}
+footer .footer_first .item-footer ul li a:hover 
+ {   margin-left: 4px;
+}
+
+footer .footer_first .item-footer .icon_social{
+    margin-left: 10px;
+    color: #ffffff99;
+   display: inline-block;
+    transition: 1.5s;
+}
+footer .footer_first .item-footer .icon_social:hover
+{
+    transform:rotateY(180deg);
+}
+ footer .footer_first{
+    border-bottom: 1px solid #ffffff99;
+    margin-bottom: 20px;
+}
+footer .footer_secand{
+    margin-top: 10px;
+}
+
+footer .footer_secand a{
+    color: #ffffff99;
+}
